@@ -1,7 +1,19 @@
 # Application<!DOCTYPE html>
 <html>
+<head>
+<style>
+body {
+	background-image:url()
+}
+
+h1 {
+	text-align:center;
+}
+</style>
+
+</head>
 <body>
-<h1>Scripture Verse App</h1>
+<h1>Scripture Mastery App</h1>
 <p id="demo">Click the button to get a random scripture for the day.</p>
 <button type="button" onclick="loadDoc()">Change Content</button>
 <script>function loadDoc() {  
