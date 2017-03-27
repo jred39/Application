@@ -2,11 +2,16 @@
 <html>
 <head>
 <title>Application</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
 	background-color:rgb(230,230,230);
 }
-
+i {
+	padding:4px;
+    
+}
 h1 {
 	text-align:center;
     margin-left:30%;
@@ -25,6 +30,7 @@ button {
 	margin-left:50%;
     margin-top:15%;
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 #words {
 	font-size:20px;
@@ -81,7 +87,14 @@ img{
 <img src="book.jpg">
 <p id="words">Click the button to get your scripture mastery verse for the day.</p>
 
-<button type="button" onclick="loadDoc()">Get Scripture</button><div id="bottom"></div>
+<button type="button" onclick="loadDoc()">Get Scripture</button>
+<i class="fa fa-book" style="font-size:20px;"></i>
+<i class="fa fa-heart" style="font-size:20px;"></i>
+<i class="fa fa-save" style="font-size:20px;"></i>
+<i class="fa fa-file" style="font-size:20px;"></i>
+<i class="fa fa-bars" style="font-size:20px;"></i>
+<div id="bottom"></div>
+
 <script>
 function loadDoc() {  
 var xhttp;  
