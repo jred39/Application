@@ -6,7 +6,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
-	background-color:rgb(230,230,230);
+	//background-color:rgb(230,230,230);
+    background-image:url(http://hd-wall-papers.com/images/wallpapers/bible-wallpaper/bible-wallpaper-15.jpg);
 }
 i {
 	padding:4px;
@@ -37,6 +38,12 @@ button {
     font-family:Arial, Helvetica, sans-serif;
     text-align:center;
     margin-left:30%;
+    color:rgb(100,100,100);
+    border:2px solid grey;
+    height:40px;
+    background-color:rgb(230,230,230);
+    padding:5px;
+    
 }
 
 ul {
@@ -63,13 +70,18 @@ li a {
     
 }
 
-
+i:hover {
+	font-size:25px;
+}
 li a:hover {
     background-color: #555;
     color: white;
 }
 img{
-
+	height:80px;
+    width:40px;
+    margin-top:30px;
+    margin-left:60px;
 }
 </style>
 
@@ -79,12 +91,12 @@ img{
 
 <h1>Scripture Mastery App</h1>
 <ul>
-  <li><a href="#home">New Scripture</a></li>
+  <li><a href="#home">Home</a></li>
   <li><a href="#news">Memorized</a></li>
   <li><a href="#contact">Read Chapter</a></li>
   <li><a href="#about">About</a></li>
 </ul>
-<img src="book.jpg">
+<img src="https://s-media-cache-ak0.pinimg.com/736x/f6/77/ca/f677ca9647ade446e3b0a23871bd4ee0.jpg">
 <p id="words">Click the button to get your scripture mastery verse for the day.</p>
 
 <button type="button" onclick="loadDoc()">Get Scripture</button>
