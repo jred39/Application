@@ -28,8 +28,8 @@ h1 {
 	font-family:Arial, Helvetica, sans-serif;
 }
 button {
-    margin-left:50%;
-	margin-top:15%;
+    margin-left:45%;
+	margin-top:15px;
 	font-family:Arial, Helvetica, sans-serif;
     position:static;
     height:40px;
@@ -38,10 +38,10 @@ button {
 	
 }
 #words {
- font-size:20px;
+ 	font-size:20px;
 	font-family:Arial, Helvetica, sans-serif;
 	text-align:center;
-	margin-left:50%;
+	margin-left:50px;
     top:30%;
 	color:rgb(100,100,100);
 	border:2px solid grey;
@@ -85,17 +85,31 @@ li a:hover {
 	color: white;
 }
 img{
- height:80px;
+ 	height:80px;
 	width:40px;
 	margin-top:30px;
 	margin-left:60px;
+    
+}
+
+#moroni:hover {
+	animation-name:imgSize;
+    animation-duration:1s;
+    animation-timing-funtion:ease;
+}
+
+@keyframes imgSize {
+	from {height:80px;}
+    from {width:40px;}
+    to	{height:100px;}
+    to	{width:60px;}
 }
 
 @keyframes newScrip {
    from {height:20px;}
    from	{width:20px;}
-   to {height:120px;}
-   to {width:300px;}
+   to {height:20px;}
+   to {width:1250px;}
 }
 </style>
 <script>
@@ -165,7 +179,7 @@ function getVerse() {
         document.getElementById("next").innerHTML = "<strong>New Scripture";
     	document.getElementById("words").style.color = "blue";
         document.getElementById("read").innerHTML = "Read Chapter";
-        //document.getElementById("read").href= chapter;
+        //document.getElementById("read").href = chapter;
 }
 
 </script>
@@ -175,21 +189,21 @@ function getVerse() {
 <h1>Scripture Mastery App</h1>
 
 <ul>
-  <li><a href="#home"><strong>Home</a></li>
-  <li><a href="#news">Memorized</a></li>
-  <li><a href="https://www.lds.org/manual/book-of-mormon-seminary-teacher-manual-2013/appendix/introduction-to-scripture-mastery?lang=eng">lds.org</a></li>
-  <li><a href="#about">About</strong></a></li>
+  <li><a href="#"><strong>Home</a></li>
+  <li><a href="https://www.lds.org/manual/book-of-mormon-seminary-teacher-manual-2013/appendix/introduction-to-scripture-mastery?lang=eng">Memorized</a></li>
+  <li><a href="https://www.lds.org/">lds.org</a></li>
+  <li><a href="#">About</strong></a></li>
 </ul>
 
-<img src="https://s-media-cache-ak0.pinimg.com/736x/f6/77/ca/f677ca9647ade446e3b0a23871bd4ee0.jpg">
+<img id="moroni" src="https://s-media-cache-ak0.pinimg.com/736x/f6/77/ca/f677ca9647ade446e3b0a23871bd4ee0.jpg">
 
 <div id="words">Click the button to get a Book of Mormon scripture mastery verse.</div>
 
 
 
-<button id="next" type="button" ontouch="getVerse()" onclick="getVerse()"><strong>Get Scripture</button>
+<button id="next" type="button" onTouch="getVerse()" onclick="getVerse()"><strong>Get Scripture</button>
 
-<button id="read" href="#"></button>
+<button id="read" href="https://www.lds.org/scriptures/bofm/2-ne/2.25?lang=eng#24"></button>
 
 <div id="bottom">
 <i class="fa fa-book" style="font-size:20px;"></i>
