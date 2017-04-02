@@ -10,8 +10,7 @@ body {
     padding:1px;
 }
 i {
- padding:4px;
-	
+ padding:4px;	
 }
 h1 {
  text-align:center;
